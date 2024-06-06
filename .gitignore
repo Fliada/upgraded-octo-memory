@@ -1,7 +1,10 @@
 # CakePHP 3
 
+*/vendor/*
 /vendor/*
 /config/app.php
+*.lock
+.vscode/*
 
 /tmp/cache/models/*
 !/tmp/cache/models/empty
@@ -21,5 +24,3 @@
 
 /app/tmp/*
 /app/Config/core.php
-/app/Config/database.php
-/vendors/*
