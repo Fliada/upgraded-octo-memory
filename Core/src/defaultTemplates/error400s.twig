@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>{{ error }}</title>
+		<title>{{ errno }}</title>
 	</head>
 	<body>
 		<div class="container">
-			<h1>У вас {{ error }}</h1>
-      <p>Похоже, что-то пошло не так</p>
+			<h1>У вас {{ errno }}</h1>
+      <p>{{ errstr }}</p>
+      <p>Ошибка может быть тут: {{ errfile }}</p>
+      <p>конкретно вот тут: {{ errline }}</p>
       <p>Вернитесь обратно и сделайте с этим что-нибудь😵‍💫😵‍💫</p>
-
-			<div class="container" style="background-color:#f1f1f1">
-				<a href="/auth">Войти</a>
-			</div>
 	</body>
 	<style>
     body {
