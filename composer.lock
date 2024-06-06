@@ -4,14 +4,14 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0b4f18b367c36e9470dc8624f8763715",
+    "content-hash": "2d0ab41ad4890b6be9ebf3e1ac0fdf7e",
     "packages": [
         {
             "name": "core/mvc",
             "version": "dev-main",
             "dist": {
                 "type": "path",
-                "url": "d:/projects/php_mvc/core",
+                "url": "C:/Users/foyeah/удалить после сдачи/php-semestry/upgraded-octo-memory/Core",
                 "reference": "9c22c5797644d6ca6d7fb7ddf9521e0af569e3d4"
             },
             "type": "library",
