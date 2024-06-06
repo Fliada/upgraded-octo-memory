@@ -5,11 +5,11 @@ use Core\RequestFactory;
 
 function main(): void
 {
-    $kernel = new Kernel();
+    require_once __DIR__ . '/vendor/mvc_core/mvc/src/Kernel.php';
 
     $request = RequestFactory::MakeRequestFromGlobals();
 
-    $response = $kernel->handleRequest($request);
+    // $response = $kernel->handleRequest($request);
 
-    var_dump($response);
+    // var_dump($response);
 }
