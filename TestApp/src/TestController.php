@@ -12,10 +12,10 @@ use Twig\Template;
 
 class TestController extends AbstractController
 {
-    #[Route(path: "/", methods: ["GET", "POST"], name: "test_hello_route_name")]
-    function test_hello(): DefaultResponse
+    #[Route(path: "/", methods: ["GET", "POST"], name: "test_index")]
+    function test_index(Request $request): TemplateResponse
     {
-        return new DefaultResponse("Hello, World!");
+        return new TemplateResponse("index.twig", []); 
     }
 
     #[Route(path: "list", methods: ["GET", "POST"], name: "test_list")]
@@ -60,13 +60,7 @@ class TestController extends AbstractController
     #[Route(path: "/success", methods: ["GET"], name: "test_success")]
     function test_success(Request $request): TemplateResponse
     {
-        $login = $request->headers['login']; 
+        $login = $request->cookies['login']; 
         return new TemplateResponse("authorized.twig", ['login' => $login]);  
-    }
-
-    #[Route(path: "/index", methods: ["GET"], name: "test_index")]
-    function test_index(Request $request): TemplateResponse
-    {
-        return new TemplateResponse("index.twig", []); 
     }
 }
